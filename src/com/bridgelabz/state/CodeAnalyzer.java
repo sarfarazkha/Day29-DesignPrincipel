@@ -20,7 +20,7 @@ public class CodeAnalyser {
             Reader reader = Files.newBufferedReader(Paths.get(csvFilePath));
             CsvToBeanBuilder<IndiaCodeCSV> csvToBeanBuilder = new CsvToBeanBuilder<>(reader);
             csvToBeanBuilder.withType(IndiaCodeCSV.class);
-            csvToBeanBuilder.withIgnoreLeadingWhiteSpace(true);
+            csvToBeanBuilder.withIgnoreLeadingWhiteSpace (true);
             CsvToBean<IndiaCodeCSV> csvToBean = csvToBeanBuilder.build();
             Iterator<IndiaCodeCSV> codeCSVIterator = csvToBean.iterator();
             ;
