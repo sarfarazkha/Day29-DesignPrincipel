@@ -2,7 +2,7 @@ package com.bridgelabz.state;
 
 public class CodeAnalyserException extends Exception {
     enum ExceptionType {
-        CENSUS_FILE_PROBLEM, WRONG_FILE_TYPE, INCORRECT_DELIMITER_OR_HEADER
+        CENSUS_FILE_PROBLEM, WRONG_FILE_TYPE,  INCORRECT_DELIMITER_OR_HEADER
     }
 
     ExceptionType type;
